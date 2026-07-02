@@ -12,215 +12,254 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
 
 </head>
 
 <body>
 
-<div class="background"></div>
+<div id="particles"></div>
 
-<div class="container">
+<div class="app">
 
-    <!-- TOPO -->
+<header>
 
-    <header>
+<div class="logo">
 
-        <div>
+<h1>🔥 PROJECT PHOENIX</h1>
 
-            <h1>🔥 PROJECT PHOENIX</h1>
+<p id="mensagem">
+Renasça todos os dias.
+</p>
 
-            <p id="frase">
-                Renasça todos os dias.
-            </p>
+</div>
 
-        </div>
+<div class="relogio">
 
-        <div id="hora">
+<span id="hora">
+00:00
+</span>
 
-            00:00
+<span id="data">
+00/00/0000
+</span>
 
-        </div>
+</div>
 
-    </header>
+</header>
 
-    <!-- PERFIL -->
+<section class="perfil">
 
-    <section class="perfil">
+<div class="avatar">
 
-        <div class="avatar">
+👤
 
-            👤
+</div>
 
-        </div>
+<div class="perfilInfo">
 
-        <div>
+<h2 id="nome">
 
-            <h2 id="nome">
+Luxs
 
-                Luxs
+</h2>
 
-            </h2>
+<p id="titulo">
 
-            <span id="titulo">
+O Renascido
 
-                O Renascido
+</p>
 
-            </span>
+</div>
 
-        </div>
+</section>
 
-    </section>
+<section class="status">
 
-    <!-- STATUS -->
+<div class="statusCard">
 
-    <section class="status">
+<p>⭐ Nível</p>
 
-        <div class="card">
+<h2 id="nivel">
 
-            <h3>⭐ Nível</h3>
+1
 
-            <span id="nivel">
+</h2>
 
-                1
+</div>
 
-            </span>
+<div class="statusCard">
 
-        </div>
+<p>🪙 Ouro</p>
 
-        <div class="card">
+<h2 id="ouro">
 
-            <h3>🔥 XP</h3>
+0
 
-            <span>
+</h2>
 
-                <span id="xp">
+</div>
 
-                    0
+<div class="statusCard">
 
-                </span>
+<p>🔥 Sequência</p>
 
-                /100
+<h2 id="streak">
 
-            </span>
+0
 
-        </div>
+</h2>
 
-        <div class="card">
+</div>
 
-            <h3>🪙 Ouro</h3>
+</section>
 
-            <span id="ouro">
+<section class="xp">
 
-                0
+<div class="tituloXP">
 
-            </span>
+<span>Experiência</span>
 
-        </div>
+<span id="xpTexto">
 
-        <div class="card">
+0 / 100
 
-            <h3>🔥 Sequência</h3>
+</span>
 
-            <span id="streak">
+</div>
 
-                0 dias
+<div class="barra">
 
-            </span>
+<div id="barraXP">
 
-        </div>
+</div>
 
-    </section>
+</div>
 
-    <!-- BARRA XP -->
+</section>
 
-    <section>
+<section class="objetivo">
 
-        <p>Experiência</p>
+<h2>
 
-        <div class="barra">
+🎯 Objetivo do Dia
 
-            <div id="barraXP"></div>
+</h2>
 
-        </div>
+<p id="objetivo">
 
-    </section>
+Complete toda sua rotina.
 
-    <!-- MENU -->
+</p>
 
-    <section class="menu">
+</section>
 
-        <button onclick="abrirPagina('dashboard')">
+<nav class="menu">
 
-            🏠 Dashboard
+<button onclick="abrirPagina('dashboard')">
 
-        </button>
+🏠 Dashboard
 
-        <button onclick="abrirPagina('rotina')">
+</button>
 
-            📅 Rotina
+<button onclick="abrirPagina('rotina')">
 
-        </button>
+📅 Rotina
 
-        <button onclick="abrirPagina('glow')">
+</button>
 
-            😎 Glow Up
+<button onclick="abrirPagina('glowup')">
 
-        </button>
+😎 Glow Up
 
-        <button onclick="abrirPagina('calistenia')">
+</button>
 
-            💪 Calistenia
+<button onclick="abrirPagina('calistenia')">
 
-        </button>
+💪 Calistenia
 
-        <button onclick="abrirPagina('touchline')">
+</button>
 
-            ⚽ Touchline
+<button onclick="abrirPagina('touchline')">
 
-        </button>
+⚽ Touchline
 
-        <button onclick="abrirPagina('estudos')">
+</button>
 
-            📚 Estudos
+<button onclick="abrirPagina('estudos')">
 
-        </button>
+📚 Estudos
 
-        <button onclick="abrirPagina('status')">
+</button>
 
-            📊 Estatísticas
+<button onclick="abrirPagina('estatisticas')">
 
-        </button>
+📊 Estatísticas
 
-        <button onclick="abrirPagina('conquistas')">
+</button>
 
-            🏆 Conquistas
+<button onclick="abrirPagina('conquistas')">
 
-        </button>
+🏆 Conquistas
 
-        <button onclick="abrirPagina('recompensas')">
+</button>
 
-            🎁 Recompensas
+<button onclick="abrirPagina('recompensas')">
 
-        </button>
+🎁 Loja
 
-        <button onclick="abrirPagina('config')">
+</button>
 
-            ⚙ Configurações
+<button onclick="abrirPagina('configuracoes')">
 
-        </button>
+⚙ Configurações
 
-    </section>
+</button>
 
-    <!-- CONTEÚDO -->
+</nav>
 
-    <main id="conteudo">
+<main id="conteudo">
 
-    </main>
+<h2>
+
+👋 Bem-vindo ao PROJECT PHOENIX
+
+</h2>
+
+<p>
+
+Este será seu sistema de evolução pessoal.
+
+Cada missão concluída aumentará sua experiência,
+ouro e progresso.
+
+Seu objetivo não é ser perfeito.
+
+Seu objetivo é ser melhor do que ontem.
+
+🔥 Continue renascendo.
+
+</p>
+
+</main>
+
+<footer>
+
+<p>
+
+PROJECT PHOENIX • Genesis
+
+</p>
+
+</footer>
 
 </div>
 
