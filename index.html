@@ -1,73 +1,231 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>PROJECT PHOENIX</title>
 
     <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <div class="container">
+<div class="background"></div>
 
-        <h1>🔥 PROJECT PHOENIX 🔥</h1>
+<div class="container">
 
-        <p class="subtitulo">
-            Renasça todos os dias.
-        </p>
+    <!-- TOPO -->
 
-        <div class="perfil">
+    <header>
 
-            <h2>👤 Luxs</h2>
+        <div>
 
-            <p>⭐ Nível: <span id="nivel">1</span></p>
+            <h1>🔥 PROJECT PHOENIX</h1>
 
-            <p>🔥 Chamas:
-                <span id="xp">0</span> / 100
-            </p>
-
-            <p>🪙 Ouro:
-                <span id="ouro">0</span>
+            <p id="frase">
+                Renasça todos os dias.
             </p>
 
         </div>
 
-        <div class="menu">
+        <div id="hora">
 
-            <button onclick="abrirRotina()">
-                📅 Rotina
-            </button>
-
-            <button onclick="abrirGlowUp()">
-                😎 Glow Up
-            </button>
-
-            <button onclick="abrirCalistenia()">
-                💪 Calistenia
-            </button>
-
-            <button onclick="abrirEstudos()">
-                📚 Estudos
-            </button>
-
-            <button onclick="abrirTouchline()">
-                ⚽ Touchline
-            </button>
-
-            <button onclick="abrirStatus()">
-                📊 Status
-            </button>
+            00:00
 
         </div>
 
-    </div>
+    </header>
 
-    <script src="script.js"></script>
+    <!-- PERFIL -->
+
+    <section class="perfil">
+
+        <div class="avatar">
+
+            👤
+
+        </div>
+
+        <div>
+
+            <h2 id="nome">
+
+                Luxs
+
+            </h2>
+
+            <span id="titulo">
+
+                O Renascido
+
+            </span>
+
+        </div>
+
+    </section>
+
+    <!-- STATUS -->
+
+    <section class="status">
+
+        <div class="card">
+
+            <h3>⭐ Nível</h3>
+
+            <span id="nivel">
+
+                1
+
+            </span>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🔥 XP</h3>
+
+            <span>
+
+                <span id="xp">
+
+                    0
+
+                </span>
+
+                /100
+
+            </span>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🪙 Ouro</h3>
+
+            <span id="ouro">
+
+                0
+
+            </span>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🔥 Sequência</h3>
+
+            <span id="streak">
+
+                0 dias
+
+            </span>
+
+        </div>
+
+    </section>
+
+    <!-- BARRA XP -->
+
+    <section>
+
+        <p>Experiência</p>
+
+        <div class="barra">
+
+            <div id="barraXP"></div>
+
+        </div>
+
+    </section>
+
+    <!-- MENU -->
+
+    <section class="menu">
+
+        <button onclick="abrirPagina('dashboard')">
+
+            🏠 Dashboard
+
+        </button>
+
+        <button onclick="abrirPagina('rotina')">
+
+            📅 Rotina
+
+        </button>
+
+        <button onclick="abrirPagina('glow')">
+
+            😎 Glow Up
+
+        </button>
+
+        <button onclick="abrirPagina('calistenia')">
+
+            💪 Calistenia
+
+        </button>
+
+        <button onclick="abrirPagina('touchline')">
+
+            ⚽ Touchline
+
+        </button>
+
+        <button onclick="abrirPagina('estudos')">
+
+            📚 Estudos
+
+        </button>
+
+        <button onclick="abrirPagina('status')">
+
+            📊 Estatísticas
+
+        </button>
+
+        <button onclick="abrirPagina('conquistas')">
+
+            🏆 Conquistas
+
+        </button>
+
+        <button onclick="abrirPagina('recompensas')">
+
+            🎁 Recompensas
+
+        </button>
+
+        <button onclick="abrirPagina('config')">
+
+            ⚙ Configurações
+
+        </button>
+
+    </section>
+
+    <!-- CONTEÚDO -->
+
+    <main id="conteudo">
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
