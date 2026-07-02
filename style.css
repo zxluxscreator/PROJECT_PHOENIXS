@@ -1,73 +1,146 @@
-# ==========================================
-# PROJECT PHOENIX
-# main.py
-#
-# Desenvolvido por:
-# Luxs 🤝 Bro
-#
-# Versão 1.0 - RENASCIMENTO
-# ==========================================
+/* ==========================================
+   PROJECT PHOENIX
+   style.css
+========================================== */
 
-from sistema import *
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-# ==========================================
-# INÍCIO DO PROGRAMA
-# ==========================================
+body{
 
-while True:
+    background:#0f172a;
 
-    mostrar_logo()
+    color:white;
 
-    print("MENU PRINCIPAL\n")
+    display:flex;
 
-    print("1 - 📅 Rotina")
-    print("2 - 😎 Glow Up")
-    print("3 - 💪 Calistenia")
-    print("4 - ⚽ Touchline")
-    print("5 - 📚 Estudos")
-    print("6 - 📊 Status")
-    print("7 - 🏆 Conquistas")
-    print("8 - ⚙ Configurações")
-    print("0 - 🚪 Sair")
+    justify-content:center;
 
-    opcao = input("\nEscolha uma opção: ")
+    align-items:center;
 
-    if opcao == "1":
-        abrir_rotina()
+    min-height:100vh;
 
-    elif opcao == "2":
-        abrir_glowup()
+}
 
-    elif opcao == "3":
-        abrir_calistenia()
+.container{
 
-    elif opcao == "4":
-        abrir_touchline()
+    width:90%;
+    max-width:500px;
 
-    elif opcao == "5":
-        abrir_estudos()
+    background:#1e293b;
 
-    elif opcao == "6":
-        abrir_status()
+    border:2px solid #38bdf8;
 
-    elif opcao == "7":
-        abrir_conquistas()
+    border-radius:20px;
 
-    elif opcao == "8":
-        abrir_config()
+    padding:30px;
 
-    elif opcao == "0":
+    text-align:center;
 
-        mostrar_logo()
+    box-shadow:0 0 30px rgba(56,189,248,.25);
 
-        print("\nObrigado por usar o PROJECT PHOENIX!")
+}
 
-        print("Continue renascendo todos os dias. 🔥🐦")
+h1{
 
-        break
+    color:#38bdf8;
 
-    else:
+    margin-bottom:10px;
 
-        print("\n❌ Opção inválida!")
+    text-shadow:0 0 15px #38bdf8;
 
-        pausar()
+}
+
+.subtitulo{
+
+    color:#cbd5e1;
+
+    margin-bottom:25px;
+
+}
+
+.perfil{
+
+    background:#0f172a;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    margin-bottom:25px;
+
+    border:1px solid #334155;
+
+}
+
+.perfil h2{
+
+    margin-bottom:15px;
+
+}
+
+.perfil p{
+
+    margin:8px 0;
+
+}
+
+.menu{
+
+    display:grid;
+
+    gap:15px;
+
+}
+
+button{
+
+    background:#38bdf8;
+
+    color:white;
+
+    border:none;
+
+    padding:16px;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+button:hover{
+
+    transform:scale(1.03);
+
+    background:#0ea5e9;
+
+    box-shadow:0 0 18px #38bdf8;
+
+}
+
+button:active{
+
+    transform:scale(.98);
+
+}
+
+@media(max-width:600px){
+
+    .container{
+
+        width:95%;
+
+        padding:20px;
+
+    }
+
+}
