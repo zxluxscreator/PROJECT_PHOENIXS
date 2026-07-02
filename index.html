@@ -1,37 +1,73 @@
-# ==========================================
-# PROJECT PHOENIX
-# dados.py
-# ==========================================
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
 
-# -----------------------------
-# DADOS DO JOGADOR
-# -----------------------------
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-jogador = {
-    "nome": "Luxs",
-    "nivel": 1,
-    "chamas": 0,
-    "ouro": 0,
+    <title>PROJECT PHOENIX</title>
 
-    "status": {
-        "Saúde": 100,
-        "Energia": 100,
-        "Disciplina": 1,
-        "Aparência": 1,
-        "Corpo": 1,
-        "Estudos": 1,
-        "Touchline": 1,
-        "Programação": 1
-    },
+    <link rel="stylesheet" href="style.css">
 
-    "missoes": {
+</head>
 
-        "Tomar Sol": False,
-        "Cardio": False,
-        "Água": False,
-        "Calistenia": False,
-        "Glow Up": False,
-        "Estudos": False
+<body>
 
-    }
-}
+    <div class="container">
+
+        <h1>🔥 PROJECT PHOENIX 🔥</h1>
+
+        <p class="subtitulo">
+            Renasça todos os dias.
+        </p>
+
+        <div class="perfil">
+
+            <h2>👤 Luxs</h2>
+
+            <p>⭐ Nível: <span id="nivel">1</span></p>
+
+            <p>🔥 Chamas:
+                <span id="xp">0</span> / 100
+            </p>
+
+            <p>🪙 Ouro:
+                <span id="ouro">0</span>
+            </p>
+
+        </div>
+
+        <div class="menu">
+
+            <button onclick="abrirRotina()">
+                📅 Rotina
+            </button>
+
+            <button onclick="abrirGlowUp()">
+                😎 Glow Up
+            </button>
+
+            <button onclick="abrirCalistenia()">
+                💪 Calistenia
+            </button>
+
+            <button onclick="abrirEstudos()">
+                📚 Estudos
+            </button>
+
+            <button onclick="abrirTouchline()">
+                ⚽ Touchline
+            </button>
+
+            <button onclick="abrirStatus()">
+                📊 Status
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
